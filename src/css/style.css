@@ -1,0 +1,59 @@
+body {
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.wrapper > * {
+    flex:  1 100%;   
+}
+
+.navbar {
+    background-color: skyblue;
+    height: 80px;
+}
+
+.main {
+    background-color: pink;
+    height: 300px;
+    padding: 40px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.aside1 {
+    background-color: lightgreen;
+}
+
+.footer {
+    background-color:gray;
+}
+
+/* responsive layout */
+
+@media all and (min-width: 800px) {
+    .main {
+        flex: 2;
+    }
+    .aside1 {
+        order: 2;
+    }
+    .main {
+        order: 1;
+    }
+    .footer {
+        order: 4;
+    }
+}
+
+@media all and (min-width: 600px) {
+    .aside {
+        flex: 1;
+    }
+}
