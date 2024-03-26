@@ -25,6 +25,7 @@ Variables
   --clr-primary-8: hsl(184, 80%, 74%);
   --clr-primary-9: hsl(185, 94%, 87%);
   --clr-primary-10: hsl(186, 100%, 94%);
+  --clr-primary-11: hsl(180, 12%, 89%);
   /* darkest grey - used for headings */
   --clr-grey-1: hsl(209, 61%, 16%);
   --clr-grey-2: hsl(211, 39%, 23%);
@@ -288,7 +289,7 @@ Contact-Me Page
     display: none;
   }
   .right {
-    width: 400px;
+    width: 375px;
   }
 }
 
@@ -300,12 +301,12 @@ Contact-Me Page
     font-size: 16px;
   }
   .contact-section .section-title a {
-    color: var(--clr-primary-1);
+    color: var(--clr-grey-1);
   }
 }
 
 .contact-section {
- background-color: var(--clr-primary-10);
+ background-color: var(--clr-primary-11);
 }
 .contact-section .section-title p {
   margin-top: 20px;
@@ -327,12 +328,11 @@ Contact-Me Page
   top: 0;
   width: 100%;
   height: 100%;
-  background: url("/images/contact-bacground.jpg") no-repeat center;
+  background: url(../images/contact-background.jpg) no-repeat center;
   background-size: cover;
   z-index: 1;
   filter: blur(0px);
 }
-
 .contact-box {
   max-width: 850px;
   display: grid;
@@ -347,7 +347,7 @@ Contact-Me Page
   display: block;
   height: 100%;
   width: 100%;
-  background: url("/images/contact-me.png");
+  background: url(../images/contact-me.png);
   background-size: cover;
 }
 .right {
