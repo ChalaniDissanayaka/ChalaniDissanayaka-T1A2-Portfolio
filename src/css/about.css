@@ -21,10 +21,13 @@ Variables
   --clr-primary-5: hsl(185, 62%, 45%);
   /* lighter shades of primary color */
   --clr-primary-6: hsl(185, 57%, 50%);
-  --clr-primary-7: hsl(184, 65%, 59%);
+  --clr-primary-7: hsl(180, 38%, 87%);
   --clr-primary-8: hsl(184, 80%, 74%);
   --clr-primary-9: hsl(185, 94%, 87%);
   --clr-primary-10: hsl(186, 100%, 94%);
+  --clr-primary-11: hsl(166, 57%, 95%);
+  --clr-primary-12: hsl(180, 58%, 86%);
+
   /* darkest grey - used for headings */
   --clr-grey-1: hsl(209, 61%, 16%);
   --clr-grey-2: hsl(211, 39%, 23%);
@@ -42,7 +45,7 @@ Variables
   --transition: all 0.3s linear;
   --spacing: 0.25rem;
   --radius: 0.5rem;
-  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
 }
 /*
@@ -137,6 +140,7 @@ p {
   border: 2px solid transparent;
   cursor: pointer;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  font-weight: 900;
 }
 .btn:hover {
   color: var(--clr-primary-1);
@@ -294,6 +298,9 @@ About Section
 .about-img {
     border: 8px solid var(--clr-primary-5);
 }
+.about-section {
+  background: var(--clr-primary-11);
+}
 .about-section .about-info h3 {
     font-size: 25px;
 }
@@ -362,14 +369,14 @@ About Section
   */
   
 .skills {
-    background: var(--clr-primary-8);
+    background: var(--clr-primary-12);
 }
 .skills .section-title {
     margin-top: 1px;
-    color: #fff;
+    color: var(--clr-grey-2);
 }
 .skills .section-title span {
-  color: var(--clr-primary-1);
+  color: var(--clr-primary-3);
 }
 .skills h3 {
     margin: 1.5rem 0;
@@ -457,6 +464,7 @@ Hobbies Section
 */
 .hobbies {
     padding: 1rem 0;
+    background: var(--clr-primary-11);
   }
   .hobbies .section-title {
     margin-top: 30px;
@@ -523,7 +531,7 @@ Aside Blog Section
 
 .sidebar {
     flex: 0 0 300px;
-    background: var(--clr-grey-10);
+    background: var(--clr-primary-7);
     height: 100%;
 }  
 .section-title {
