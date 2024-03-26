@@ -467,19 +467,18 @@ Aside Blog Section
     height: 200px;      
   }
   .sidebar .blog-card {
-    height: 315px;
+    height: 310px;
     margin-bottom: 20px;
   }
   .sidebar .blog-img {
-    height: 180px;      
+    height: 170px;      
   }
- 
   .sidebar .blog-card .blog-info p {
     font-size: 12px;
   }
   .sidebar .news-card {
-    margin-top: 20px;
-    height: 520px;
+    margin-top: 15px;
+    height: 100%;
   }
   .sidebar .news-card .news-info h4 {
     margin-bottom: 10px;
@@ -488,6 +487,28 @@ Aside Blog Section
   }
   .sidebar .news-card .news-info p {
     font-size: 11px;
+  }
+}
+@media(min-width: 992px) {
+  .sidebar .blog-card {
+    height: 250px;
+    margin-bottom: 10px;
+  }
+  .sidebar .blog-img {
+    height: 140px;      
+  }
+  .sidebar .blog-card .blog-info h4 {
+    margin-top: 5px;
+  }
+  .sidebar .blog-card .blog-info p {
+    font-size: 10px;
+  }
+  .sidebar .news-card {
+    height: 100%;
+    
+  }
+  .sidebar .news-card .news-info p {
+    font-size: 8px;
   }
 }
 
@@ -572,7 +593,7 @@ Aside Blog Section
   }
   .sidebar .blog-card {
     margin-bottom: 15px;
-    height: 250px;
+    height: 240px;
   }
   .sidebar .blog-info h4 {
     margin-bottom: 10px;    

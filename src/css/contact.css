@@ -90,7 +90,7 @@ h2 {
   font-size: 2rem;
 }
 h3 {
-  font-size: 1.25rem;
+  font-size: 1.75rem;
 }
 h4 {
   font-size: 0.875rem;
@@ -156,14 +156,13 @@ p {
   color: var(--clr-primary-5);
 }
 .section-center {
-  width: 90vw;
+  width: 100%;
   margin: 0 auto;
   max-width: 1170px;
 }
 @media screen and (min-width: 900px) {
   .section-center {
     width: 70vw;
-
   }
 }
 
@@ -283,6 +282,7 @@ p {
 Contact-Me Page
 =====================
 */
+
 @media screen and (min-width: 300px) {
   .left {
     display: none;
@@ -291,8 +291,25 @@ Contact-Me Page
     width: 400px;
   }
 }
+
+@media screen and (min-width: 400px) {
+  .contact-section .section-title h2{
+    font-size: 40px;
+  }
+  .contact-section .section-title p {
+    font-size: 16px;
+  }
+  .contact-section .section-title a {
+    color: var(--clr-primary-1);
+  }
+}
+
 .contact-section {
  background-color: var(--clr-primary-10);
+}
+.contact-section .section-title p {
+  margin-top: 20px;
+  font-size: 16px;
 }
 .contact-container {
   position: relative;
@@ -373,6 +390,14 @@ h2:after {
   min-height: 200px;
 }
 
+@media screen and (min-width: 700px) {
+  .contact-section .section-title h2{
+    font-size: 40px;
+  }
+  .contact-section .section-title p {
+    font-size: 18px;
+  }
+}
 
 
 /*
@@ -453,6 +478,9 @@ Aside Blog Section
     font-weight: 900;
     font-size: 18px;
 }
+.sidebar .news-card .news-info p {
+  text-align: justify;
+}
   
 @media(min-width: 700px){
     .aside-center {
@@ -472,33 +500,30 @@ Aside Blog Section
   
 @media(min-width: 900px) {
     .section-title {
-      margin-top: 90px;
+      margin-top: 100px;
       padding: 12px;
       margin-bottom: 1rem;
     }
     .sidebar .section-title h2 {
       font-size: 15px;
+      margin-top: 20px;
     }
     .aside-center{
       width: 280px;
     }
-    .blog-img {
-      height: 200px;      
-    }
-    .blog-card {
-      height: 400px;
+    .sidebar .blog-card {
+      height: 270px;
       margin-bottom: 20px;
     }
     .sidebar .blog-img {
-      height: 200px;      
+      height: 150px;      
     }
-    .sidebar .blog-card {
-      height: 320px;
+    .sidebar .blog-card .blog-info h4 {
       margin-top: 5px;
     }
     .sidebar .news-card {
       margin-top: 30px;
-      height: 480px;
+      height: 100%;
     }
     .sidebar .news-card .news-info h4 {
       margin-bottom: 10px;
@@ -507,87 +532,7 @@ Aside Blog Section
     }
 }
   
-@media(min-width: 1024px) {
-    .sidebar .section-title {
-      margin-top: 110px;
-    }
-    .sidebar .section-title h2 {
-      font-size: 15px;
-    }
-    .sidebar .blog-img {
-      height: 135px;      
-    }
-    .sidebar .blog-card {
-      height: 225px;
-      margin-bottom: 15px;
-    }
-    .sidebar .news-card {
-      margin-top: 1px;
-      height: 435px;
-    }
-    .sidebar .section-title {
-      margin-bottom: 2px;
-    } 
-    .sidebar .blog-info h4 {
-      margin-bottom: 5px;    
-    } 
-    .sidebar .news-card .news-info h4 {
-      margin-top: 10px;
-    } 
-}
-  
-@media(min-width: 1190px) {
-    .sidebar .section-title {
-      margin-top: 110px;
-    }
-    .sidebar .blog-card  {
-      height: 235px;
-      margin-bottom: 15px;
-    }
-    .sidebar .blog-info h4 {
-      margin-bottom: 10px;    
-    }
-    .sidebar .news-card {
-      height: 440px;
-    }    
-}
-  
-@media(min-width: 1280px) {
-    .sidebar .blog-img {
-      height: 130px;      
-    }
-    .sidebar .blog-card {
-      height: 230px;
-      margin-bottom: 20px;
-    }
-    .sidebar .blog-info h4 {
-      margin-bottom: 12px;    
-    }
-    .sidebar .news-card {
-      margin-top: 3px;
-      height: 450px;
-    }
-    .sidebar .blog-info h4 {
-      margin-bottom: 10px;    
-    } 
-}
-  
-@media(min-width: 1400px) {
-    .sidebar .blog-img {
-      height: 150px;      
-    }
-    .sidebar .blog-card {
-      margin-bottom: 15px;
-      height: 245px;
-    }
-    .sidebar .blog-info h4 {
-      margin-bottom: 10px;    
-    } 
-    .sidebar .news-card {
-      height: 430px;
-    }  
-}
-  
+
 
 /*
 =============== 
@@ -681,81 +626,4 @@ Grid for Mobile View
     }    
   }
   
-/*
-=============== 
-About Section
-===============
-*/
-/* section add to globals */
-/* title add to globals */
-/* section center add to globals */
-
-.about-img,
-.about-info {
-  margin-bottom: 2rem;
-}
-.about-img {
-    border: 8px solid var(--clr-primary-5);
-}
-.about-section .about-info h3 {
-    font-size: 25px;
-}
-.about-section .section-title h2{
-    font-size: 18px;
-}
-
-@media screen and (min-width: 400px) {
-  .about-section .section-title h2{
-    font-size: 20px;
-  }
-  
-}
-@media screen and (min-width: 700px) {
-  .about-section .section-title h2{
-    font-size: 38px;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .about-center {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  .about-img,
-  .about-info {
-    flex: 0 0 calc(50% - 2rem);
-    margin-bottom: 0;
-    align-self: center;
-  }
-  .about-section .about-info h3 {
-    font-size: 23px;
-  }
-  .about-section .section-title {
-    margin-bottom: 3rem;
-  }
-}
-
-@media screen and (min-width: 1170px) {
-  .about-img {
-    border: none;
-  }
-  .about-img::before {
-    content: "";
-    position: absolute;
-    border: 0.5rem solid var(--clr-primary-5);
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-    top: -1.5rem;
-    left: -1.5rem;
-    /* z-index: -1; */
-  }
-  .about-img {
-    position: relative;
-  }
-  .about-photo {
-    position: relative;
-  } 
-}
 

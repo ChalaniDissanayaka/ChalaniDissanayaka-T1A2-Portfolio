@@ -25,6 +25,7 @@ Variables
   --clr-primary-8: hsl(184, 80%, 74%);
   --clr-primary-9: hsl(185, 94%, 87%);
   --clr-primary-10: hsl(186, 100%, 94%);
+  --clr-primary-11: hsl(180, 12%, 89%);
   /* darkest grey - used for headings */
   --clr-grey-1: hsl(209, 61%, 16%);
   --clr-grey-2: hsl(211, 39%, 23%);
@@ -34,7 +35,7 @@ Variables
   --clr-grey-5: hsl(210, 22%, 49%);
   --clr-grey-6: hsl(209, 23%, 60%);
   --clr-grey-7: hsl(211, 27%, 70%);
-  --clr-grey-8: hsl(210, 31%, 80%);
+  --clr-grey-8: hsl(208, 31%, 88%);
   --clr-grey-9: hsl(212, 33%, 89%);
   --clr-grey-10: hsl(210, 36%, 96%);
   --clr-white: #fff;
@@ -276,12 +277,12 @@ p {
     color: var(--clr-primary-8);
   }
 }
-
 /*
 ================ 
 Projects Section
 ================
 */
+
 .project .section-title {
   margin-bottom: 50px;
 }
@@ -290,7 +291,7 @@ Projects Section
 }
 .project-card {
     transition: var(--transition);
-    background: var(--clr-grey-10);
+    background: var(--clr-primary-11);
     box-shadow: var(--light-shadow);
     margin-bottom: 2rem;
   }
@@ -308,7 +309,7 @@ Projects Section
     padding: 1.25rem 1.5rem;
   }
   /* extra css */
-  .tour-title {
+  .project-title {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -350,6 +351,7 @@ Projects Section
       flex: 0 0 calc(50% - 2rem);
     }
   }
+
   @media screen and (min-width: 1170px) {
     .project-card {
       flex: 0 0 calc(33.333% - 2rem);
@@ -549,7 +551,7 @@ Aside Blog Section
     }
     .sidebar .news-card {
       margin-top: 15px;
-      height: 630px;
+      height: 100%;
     }
   }
   @media(min-width: 992px) {
@@ -562,9 +564,8 @@ Aside Blog Section
     }
   }
   
-  @media(min-width: 1024px) {
+  @media(min-width: 1006px) {
     .sidebar .section-title h2 {
-      font-size: 15px;
       margin-bottom: 30px;
     }
     .sidebar .blog-img {
@@ -578,7 +579,7 @@ Aside Blog Section
       margin-top: 15px;
     }
     .sidebar .news-card {
-      height: 650px;
+      height: 100%;
       margin-bottom: 25px;
     }
     .sidebar .news-card .news-info h4 {
@@ -586,11 +587,16 @@ Aside Blog Section
       margin-bottom: 20px;
     } 
   }
-  @media(min-width: 1116px) {
+  @media(min-width: 1024px) {
+    .sidebar .blog-card {
+      height: 290px;
+      margin-bottom: 25px;
+    }
     .sidebar .news-card {
-      height: 630px;
+      height: 100%;
     }
   }
+  
   @media(min-width: 1190px) {
     .sidebar .section-title {
       margin-top: 90px;
@@ -599,8 +605,11 @@ Aside Blog Section
       margin-bottom: 10px;
     }
     .sidebar .blog-card  {
-      height: 250px;
-      margin-bottom: 15px;
+      height: 260px;
+      margin-bottom: 12px;
+    }
+    .sidebar .blog-img {
+      height: 145px;      
     }
     .sidebar .blog-info h4 {
       margin-bottom: 8px; 
@@ -611,7 +620,7 @@ Aside Blog Section
       margin-top: 5px;
     }
     .sidebar .news-card {
-      height: 530px;
+      height: 100%;
       margin-top: 10px;
     } 
     .sidebar .news-card .news-info h4 {
@@ -625,33 +634,42 @@ Aside Blog Section
       height: 125px;      
     }
     .sidebar .blog-card {
-      height: 240px;
-      margin-bottom: 20px;
+      height: 250px;
+      margin-bottom: 15px;
     }
     .sidebar .blog-info h4 {
       margin-bottom: 12px;    
     }
     .sidebar .news-card {
-      height: 540px;
+      height: 100%;
     }
     .sidebar .blog-info h4 {
       margin-bottom: 10px;    
     } 
   }
+  @media(min-width: 1348px) {
+    .sidebar .blog-card {
+      height: 245px;
+      margin-bottom: 15px;
+    }
+    .sidebar .news-card {
+      height: 100%;
+    }
+  }
   
   @media(min-width: 1400px) {
     .sidebar .blog-img {
-      height: 130px;      
+      height: 125px;      
     }
     .sidebar .blog-card {
       margin-bottom: 10px;
-      height: 240px;
+      height: 235px;
     }
     .sidebar .blog-info h4 {
       margin-bottom: 5px;    
     } 
     .sidebar .news-card {
-      height: 530px;
+      height: 520px;
     }
     .sidebar .news-card .news-info h4 {
       margin-top: 10px;

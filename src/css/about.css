@@ -366,6 +366,10 @@ About Section
 }
 .skills .section-title {
     margin-top: 1px;
+    color: #fff;
+}
+.skills .section-title span {
+  color: var(--clr-primary-1);
 }
 .skills h3 {
     margin: 1.5rem 0;
