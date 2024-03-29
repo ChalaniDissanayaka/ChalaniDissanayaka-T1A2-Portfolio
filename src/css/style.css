@@ -134,7 +134,7 @@ p {
   display: inline-block;
   /* font-weight: 700; */
   transition: var(--transition);
-  font-size: 0.875rem;
+  font-size: 1.1rem;
   border: 2px solid transparent;
   cursor: pointer;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
@@ -215,7 +215,7 @@ p {
   transition: var(--transition);
   color: var(--clr-grey-1);
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: 900;
   margin: 10px;  
 }
@@ -231,7 +231,7 @@ p {
   transition: var(--transition);
 }
 .show-links {
-  height: 280px;
+  height: 300px;
 }
 @media screen and (min-width: 992px) {
   /* hide toggle button */
@@ -272,7 +272,8 @@ p {
     color: var(--clr-primary-3);
     font-size: 1.2rem;
     transition: var(--transition);
-    margin: 8px;
+    font-size: 1.6rem;
+    margin: 12px;
   }
   .nav-icon:hover {
     color: var(--clr-primary-8);
@@ -291,8 +292,13 @@ About Section
 .about-info {
   margin-bottom: 2rem;
 }
+.about-info p {
+  color: var(--clr-grey-3);
+  font-size: 18px;
+}
 .about-img {
     border: 8px solid var(--clr-primary-5);
+    transition: 0.3s ease-in-out;
 }
 .about-section {
   background: var(--clr-primary-11);
@@ -426,6 +432,7 @@ Aside Blog Section
 }
 .blog-info p {
   font-size: 14px;
+  font-weight: 600;
 }
 .sidebar .news-card {
   background-color: var(--clr-primary-9);
@@ -458,7 +465,7 @@ Aside Blog Section
 
 @media(min-width: 900px) {
   .section-title {
-    margin-top: 90px;
+    margin-top: 100px;
     padding: 12px;
     margin-bottom: 1rem;
   }
@@ -560,32 +567,34 @@ Aside Blog Section
     margin-top: 110px;
   }
   .sidebar .blog-card  {
-    height: 235px;
-    margin-bottom: 15px;
+    height: 230px;
+    margin-bottom: 12px;
   }
   .sidebar .blog-info h4 {
     margin-bottom: 10px;    
   }
+  .sidebar .blog-card .blog-info p {
+    font-size: 11px;
+  }
   .sidebar .news-card {
-    height: 430px;
+    height: 500px;
     margin-top: 15px;
   }    
 }
 
 @media(min-width: 1280px) {
   .sidebar .blog-img {
-    height: 130px;      
+    height: 125px;      
   }
   .sidebar .blog-card {
     height: 230px;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
   }
   .sidebar .blog-info h4 {
-    margin-bottom: 12px;    
+    margin-bottom: 10px;    
   }
   .sidebar .news-card {
-    margin-top: 3px;
-    height: 450px;
+    height: 100%;
   }
   .sidebar .blog-info h4 {
     margin-bottom: 10px;    
@@ -594,17 +603,17 @@ Aside Blog Section
 
 @media(min-width: 1400px) {
   .sidebar .blog-img {
-    height: 140px;      
+    height: 125px;      
   }
   .sidebar .blog-card {
     margin-bottom: 15px;
-    height: 240px;
+    height: 230px;
   }
   .sidebar .blog-info h4 {
     margin-bottom: 10px;    
   } 
   .sidebar .news-card {
-    height: 430px;
+    height: 100%;
   }  
 }
 

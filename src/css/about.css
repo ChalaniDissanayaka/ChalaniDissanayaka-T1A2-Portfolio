@@ -136,7 +136,7 @@ p {
   display: inline-block;
   /* font-weight: 700; */
   transition: var(--transition);
-  font-size: 0.875rem;
+  font-size: 1.2rem;
   border: 2px solid transparent;
   cursor: pointer;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
@@ -218,7 +218,7 @@ p {
   transition: var(--transition);
   color: var(--clr-grey-1);
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: 900;
   margin: 10px;  
 }
@@ -234,7 +234,7 @@ p {
   transition: var(--transition);
 }
 .show-links {
-  height: 280px;
+  height: 300px;
 }
 @media screen and (min-width: 992px) {
   /* hide toggle button */
@@ -273,9 +273,9 @@ p {
   .nav-icon {
     margin-right: 0.7rem;
     color: var(--clr-primary-3);
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     transition: var(--transition);
-    margin: 8px;
+    margin: 12px;
   }
   .nav-icon:hover {
     color: var(--clr-primary-8);
@@ -295,8 +295,13 @@ About Section
 .about-info {
   margin-bottom: 2rem;
 }
+.about-info p {
+  color: var(--clr-grey-1);
+  font-size: 18px;
+}
 .about-img {
     border: 8px solid var(--clr-primary-5);
+    transition: 0.3s ease-in-out;
 }
 .about-section {
   background: var(--clr-primary-11);
@@ -462,66 +467,223 @@ About Section
 Hobbies Section
 ================
 */
-.hobbies {
-    padding: 1rem 0;
-    background: var(--clr-primary-11);
-  }
-  .hobbies .section-title {
-    margin-top: 30px;
-  }
-  .hobby-card {
-    transition: var(--transition);
-    background: var(--clr-grey-10);
-    box-shadow: var(--light-shadow);
-    margin-bottom: 2rem;
-    border: 3px solid var(--clr-primary-3);
-  }
-  .hobby-card:hover {
-    box-shadow: var(--dark-shadow);
-    transform: scale(1.02);
-  }
-  .hobby-img-container {
-    position: relative;
-  }
-  .hobby-img {
-    border: 2px solid var(--clr-primary-3);
-    height: 12rem;
-    object-fit: cover;
-  }
-  .hobby-info {
-    padding: .5rem 1rem;
-  }
-  /* extra css */
-  .hobby-title {
+.hobby-center {
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 20px;
+}
+.hobbies .section-title {
+  margin-top: 10px;
+}
+.hobby-container {
+  width: 275px;
+  height: 450px;
+  perspective: 1000px;
+  margin-bottom: 10px; 
+}
+.hobby-card {
+  display: flex;
+  height: 100%;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #00ffd6, #08e266);
+  transition: 0.5s ease-in-out;
+  transform-style: preserve-3d;
+  box-shadow: 
+  #05471100 40px 50px 25px,
+  #02140033 0px 25px 25px ;
+}
+.hobby-glass {
+  transform-style: preserve-3d;
+  position: absolute;
+  inset: 8px;
+  background: linear-gradient(#ffffff59, #ffffffd0);
+  border-radius: 45px;
+  border-top-right-radius: 100%;
+  border-left: 1px solid white;
+  border-bottom: 1px solid white;
+  transition: 0.5s ease-in-out;
+  transform: translate3d(0, 0, 25px);
+}
+.hobby-logo {
+  position: absolute;
+  right: 0;
+  transform-style: preserve-3d;
+}
+.hobby-logo img {
+  width: 275px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 45px;
+  box-shadow: #05471180 -10px 10px 20px;
+}
+.hobby-logo .circle {
+  position: absolute;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #00f9cd33;
+  top: 0;
+  right: 0;
+  box-shadow: #64646f33 -10px 10px 20px;
+  transition: 0.5s ease-in-out;
+  backdrop-filter: blur(10px);
+}
+.hobby-logo .circle1 {
+  width: 170px;
+  transform: translate3d(0, 0, 20px);
+  top: 8px;
+  right: 8px;
+  transition-delay: 0.0s;
+}
+.hobby-logo .circle2 {
+  width: 140px;
+  transform: translate3d(0, 0, 40px);
+  top: 10px;
+  right: 10px;
+  transition-delay: 0.4s;
+}
+.hobby-logo .circle3 {
+  width: 110px;
+  transform: translate3d(0, 0, 60px);
+  top: 17px;
+  right: 17px;
+  transition-delay: 0.8s;
+}
+.hobby-logo .circle4 {
+  width: 80px;
+  transform: translate3d(0, 0, 80px);
+  top: 23px;
+  right: 23px;
+  transition-delay: 1.2s;
+}
+.hobby-logo .circle5 {
+  width: 50px;
+  transform: translate3d(0, 0, 100px);
+  top: 30px;
+  right: 30px;
+  transition-delay: 1.6s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--clr--primary-5);
+}
+.hobby-logo .circle5 svg {
+  width: 1rem;
+  height: 1rem;
+}
+.hobby-content {
+  padding: 135px 50px 0 30px;
+}
+.hobby-content h1 {
+  color: #102a42;
+  font-weight: 900;
+  margin-top: 70px;
+  font-size: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-transform: uppercase;
+}
+.hobby-content p {
+  margin-top: 10px;
+  color:  #0c1b29;
+  font-size: 14px;
+  font-weight: 900;
+}
+.hobby-footer {
+  transform-style: preserve-3d;
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hobby-footer .link{
+  transition: 0.2s ease-in-out;
+  font-size: 12px;
+  color: #04292b;
+  cursor: pointer;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.hobby-footer .link:hover {
+  transform: translate3d(0, 0, 10px);
+  color: #149199;
+}
+.hobby-footer .social {
+  display: flex;
+  transform-style: preserve-3d;
+  gap: 10px;
+}
+.hobby-footer .social .social_icons {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  color: #149199;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: #05471180 7px 7px 5px;
+  transition: 0.5s;
+}
+.hobby-footer .social .social_icons:nth-child(1) {
+  transition: 0.2s ease-in-out 0.2s;
+}
+.hobby-footer .social .social_icons:nth-child(2) {
+  transition: 0.2s ease-in-out 0.4s;
+}
+.hobby-footer .social .social_icons:nth-child(3) {
+  transition: 0.2s ease-in-out 0.6s;
+}
+
+/* Hover Effect */
+
+.hobby-container:hover .hobby-card {
+  transform: rotate3d(1, 1, 0, 30deg);
+  box-shadow: 
+  #0547110d 30px 50px 25px,
+  #05471111 0px 25px 30px ;
+}
+.hobby-container:hover .hobby-card .hobby-footer .social .social_icons {
+  transform: translate3d(0, 0, 50px);
+  box-shadow: #05471133 -5px 20px 10px;
+}
+.hobby-container:hover .hobby-card .hobby-logo .circle2 {
+  transform: translate3d(0, 0, 60px);
+}
+.hobby-container:hover .hobby-card .hobby-logo .circle3 {
+  transform: translate3d(0, 0, 80px);
+}
+.hobby-container:hover .hobby-card .hobby-logo .circle4 {
+  transform: translate3d(0, 0, 100px);
+}
+.hobby-container:hover .hobby-card .hobby-logo .circle5 {
+  transform: translate3d(0, 0, 120px);
+}
+
+@media screen and (min-width: 768px) {
+  .hobby-center{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 90px;
+    row-gap: 40px;
   }
-  .hobby-title h4 {
-    margin-bottom: 0.5rem;
-    margin-top: 0.5rem;
-    line-height: 1.25;
-    text-transform: uppercase;
+  .hobby-card {
+    flex: 0 0 calc(50% - 2rem);
+  } 
+}
+
+@media screen and (min-width: 1170px) {
+  .hobby-card {
+    flex: 0 0 calc(33.333% - 2rem);
   }
-  .hobby-title p {
-    color: var(--clr-grey-7);
-    
-    line-height: 1.25;
-  }
-  @media screen and (min-width: 768px) {
-    .hobby-center{
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
-    .hobby-card {
-      flex: 0 0 calc(50% - 2rem);
-    }
-  }
-  @media screen and (min-width: 1170px) {
-    .hobby-card {
-      flex: 0 0 calc(33.333% - 2rem);
-    }
-  }
+}
+ 
   
 /*
 ==================== 
@@ -589,6 +751,7 @@ Aside Blog Section
 .blog-info p {
     font-size: 11px;
     text-align: justify; 
+    font-weight: 600;
 }
 .sidebar .news-card {
     background-color: var(--clr-primary-9);
@@ -621,27 +784,22 @@ Aside Blog Section
   
 @media(min-width: 900px) {
     .section-title {
-      margin-top: 90px;
+      margin-top: 100px;
       padding: 12px;
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
     }
     .sidebar .section-title h2 {
       font-size: 15px;
-      margin-top: 20px;
     }
     .aside-center{
       width: 280px;
     }
-    .blog-card {
-      height: 400px;
+    .sidebar .blog-card {
+      height: 365px;
       margin-bottom: 50px;
     }
     .sidebar .blog-img {
       height: 200px;      
-    }
-    .sidebar .blog-card {
-      height: 365px;
-      margin-top: 5px;
     }
     .sidebar .blog-info h4 {
       margin-top: 15px;
@@ -660,100 +818,49 @@ Aside Blog Section
       font-size: 13px;
     }
 }
-  
-@media(min-width: 1024px) {
-    .sidebar .section-title {
-      margin-top: 110px;
-    }
-    .sidebar .section-title h2 {
-      font-size: 15px;
-    }
-    .sidebar .blog-img {
-      height: 200px;      
-    }
-    .sidebar .blog-card {
-      height: 360px;
-    }
-    .sidebar .news-card {
-      height: 700px;
-    }
- 
-    .sidebar .blog-info p {
-      font-size: 13px;
-    }
-    .sidebar .news-card .news-info h4 {
-      margin-top: 35px;
-      margin-bottom: 25px;
-    } 
-    .sidebar .news-card .news-info p {
-      font-size: 13px;
-    }
-}
-  
-@media(min-width: 1180px) {
-    .sidebar .blog-card  {
-      height: 320px;
-      margin-bottom: 20px;
-    }
-    .sidebar .blog-img {
-      height: 180px;      
-    }
-    .sidebar .blog-info p  {
-      font-size: 12px;
-    }
-    .sidebar .news-card {
-      height: 650px;
-    } 
-    .sidebar .news-card .news-info h4 {
-      margin-top: 25px;
-      margin-bottom: 15px;
-      
-    }   
-} 
-  
-@media(min-width: 1280px) {
-  .sidebar .blog-card  {
-    height: 300px;
+
+@media(min-width: 1393px) {
+  .sidebar .blog-card {
+    height: 330px;
     margin-bottom: 20px;
   }
   .sidebar .blog-img {
     height: 170px;      
   }
-  .sidebar .blog-info h4 {
-    margin-top: 8px;
-  }
   .sidebar .news-card {
-    height: 620px;
-  } 
+    margin-top: 20px;
+    height: 100%;
+  }
   .sidebar .news-card .news-info h4 {
-    margin-top: 20px;  
-  } 
-}
-  
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+} 
+
 @media(min-width: 1437px) {
   .sidebar .blog-card  {
-    height: 290px;
-    margin-bottom: 15px;
+    height: 320px;
+    margin-bottom: 20px;
   }
   .sidebar .section-title h2 {
     margin-bottom: 5px;
   }
   .sidebar .blog-img {
-    height: 160px;      
+    height: 150px;      
   }
   .sidebar .news-card {
-    height: 560px;
-    margin-top: 30px;
+    height: 100%;
+    margin-top: 10px;
   }
   .sidebar .blog-info p {
     margin-top: 1px;
   }
   .sidebar .news-card .news-info h4 {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   } 
   .sidebar .news-card .news-info p {
-    font-size: 12px;
+    font-size: 13px;
   }
 }
   
@@ -857,3 +964,5 @@ Grid for Mobile View
         "hobbies sidebar";
     }    
   }
+
+

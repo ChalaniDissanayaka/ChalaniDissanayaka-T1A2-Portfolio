@@ -135,7 +135,7 @@ p {
   display: inline-block;
   /* font-weight: 700; */
   transition: var(--transition);
-  font-size: 0.875rem;
+  font-size: 1.2rem;
   border: 2px solid transparent;
   cursor: pointer;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
@@ -216,7 +216,7 @@ p {
   transition: var(--transition);
   color: var(--clr-grey-1);
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: 900;
   margin: 10px;  
 }
@@ -232,7 +232,7 @@ p {
   transition: var(--transition);
 }
 .show-links {
-  height: 280px;
+  height: 300px;
 }
 @media screen and (min-width: 992px) {
   /* hide toggle button */
@@ -271,9 +271,9 @@ p {
   .nav-icon {
     margin-right: 0.7rem;
     color: var(--clr-primary-3);
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     transition: var(--transition);
-    margin: 8px;
+    margin: 12px;
   }
   .nav-icon:hover {
     color: var(--clr-primary-8);
@@ -469,6 +469,7 @@ Aside Blog Section
 }
 .blog-info p {
     font-size: 11px;
+    font-weight: 600;
 }
 .sidebar .news-card {
     background-color: var(--clr-primary-9);
@@ -510,7 +511,7 @@ Aside Blog Section
     }
     .sidebar .section-title h2 {
       font-size: 15px;
-      margin-top: 20px;
+      margin-bottom: 0;
     }
     .aside-center{
       width: 280px;
