@@ -310,12 +310,12 @@ About Section
     font-size: 25px;
 }
 .about-section .section-title h2{
-    font-size: 18px;
+    font-size: 25px;
 }
 
 @media screen and (min-width: 400px) {
   .about-section .section-title h2{
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 @media screen and (min-width: 700px) {
@@ -616,7 +616,7 @@ Hobbies Section
   transform-style: preserve-3d;
   gap: 10px;
 }
-.hobby-footer .social .social_icons {
+.hobby-footer .social .social_icons a {
   display: inline-block;
   width: 30px;
   height: 30px;

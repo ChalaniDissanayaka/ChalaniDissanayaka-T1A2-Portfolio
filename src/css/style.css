@@ -307,12 +307,17 @@ About Section
     font-size: 25px;
 }
 .about-section .section-title h2{
-    font-size: 18px;
+    font-size: 20px;
 }
 
 @media screen and (min-width: 400px) {
   .about-section .section-title h2{
-    font-size: 20px;
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 500px) {
+  .about-section .section-title h2{
+    font-size: 28px;
   }
 }
 @media screen and (min-width: 700px) {

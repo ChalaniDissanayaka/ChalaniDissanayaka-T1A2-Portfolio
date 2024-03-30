@@ -1,6 +1,12 @@
-https://chalanidissanayaka.github.io/ChalaniDissanayaka-T1A2-Portfolio/src/index.html
+## Portfolio Project- Chalani Dissanayaka - (Coder Academy Term 1 Assignment 2)
 
-# Personal Portfolio Project- Chalani Dissanayaka
+### LINKS
+
+- Published Portfolio Wbsite - https://chalanidissanayaka.github.io/ChalaniDissanayaka-T1A2-Portfolio/src/index.html
+
+- GitHub Repo - https://github.com/ChalaniDissanayaka/ChalaniDissanayaka-T1A2-Portfolio
+
+- Presentation Video -
 
 ## Authors
 
@@ -160,6 +166,12 @@ design my website background and darker color for footer, headings and paragraph
 
 —clr-grey-10 : #102A42 : Catskill White
 
+### FONT SELECTION
+
+Early in the planning phase, i had couple of fonts in my mind but i have changed the mind to folowing font to style my project.
+
+- Lato
+
 ## FUNCTIONALITY & FEATURES
 
 This 4-page portfolio website features comprehensive functionality and user-friendly navigation.
@@ -205,7 +217,7 @@ I appreciate simplicity. Therefore my first thoughts were designing a very simpl
 
 - My next step was draw the wireframe diagrams for Desktop screen size.
 
-- Initially, I planned to allocate blogs to a separate HTML page. After thorough analysis and careful research, I opted to integrate blogs into a sidebar for a more cohesive user experience.
+- Initially, I planned to allocate blogs and my resume to a separate HTML page. After thorough analysis and careful research, I opted to integrate blogs into a sidebar for a more cohesive user experience. I attached my resume link to the hire me button in about page.
 
 ### Home page
 
@@ -226,6 +238,8 @@ I appreciate simplicity. Therefore my first thoughts were designing a very simpl
 ## Developing the Personal Portfolio
 
 ### Development ideas.
+
+- Initially, I planned to allocate blogs and my resume to a separate HTML page. I attached my resume link to the hire me button in about page.
 
 In the initial wireframe v1 design of my portfolio, I intended to place the blog within a
 separate HTML page. However, after thorough research and consideration, I opted to
@@ -465,7 +479,7 @@ layout for both mobile and desktop views to address these challenges effectively
 
 - Agile Development Methodology
 
-### Firther Development
+### Further Development
 
 In this portfolio project, I aim to implement smooth-scrolling functionality for the
 sidebar blogs. This feature enhances user experience by enabling seamless navigation
@@ -500,3 +514,8 @@ https://www.w3schools.com
 https://stackoverflow.com
 
 Book : New Perspectives HTML5 and CSS3
+
+## Lot of Thanks
+
+- Lot of thanks Alex and all the friends in the class.
+- It was challenging but with all the help and guidance, made my first css project is a succesful one.
