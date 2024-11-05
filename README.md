@@ -2,11 +2,11 @@
 
 ### LINKS
 
-- Published Portfolio Wbsite - https://chalanidissanayaka.github.io/ChalaniDissanayaka-T1A2-Portfolio/src/index.html
+- ![Published Portfolio Wbsite](https://chalanidissanayaka.github.io/ChalaniDissanayaka-T1A2-Portfolio/src/index.html)
 
-- GitHub Repo - https://github.com/ChalaniDissanayaka/ChalaniDissanayaka-T1A2-Portfolio
+- ![GitHub Repo](https://github.com/ChalaniDissanayaka/ChalaniDissanayaka-T1A2-Portfolio)
 
-- Presentation Video - https://youtu.be/_F8ibBmWR24
+- ![Presentation Video](https://youtu.be/_F8ibBmWR24)
 
 ## Authors
 
